@@ -34,8 +34,10 @@ else { $('.shown')
 .removeClass('shown')
 .prev()
 .addClass('shown');
-}
+};
 
 
-var name = $('.shown').attr('.title');
-$('h1.name').text('.name');
+var name = $('.shown').attr('title');
+$('h1').text(name);
+
+});
